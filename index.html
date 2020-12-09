@@ -48,7 +48,8 @@
 }
 
 body{
-  background: url("rock3.jpg") no-repeat center center fixed; 
+  background: url("glacier.png") no-repeat center center fixed; 
+  background-size: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -61,14 +62,17 @@ body{
 
 .btn{
   display: inline-block;
-  background-color: black;
+  background-color: rgba(255,255,255,0.1);
   color: white;
-  border: 1px solid white; 
-  border-radius: 8px;
   padding: 16px 24px;
   cursor: pointer;
   text-decoration: none;
   margin: 16px 0;
+  border: 1px solid transparent;
+}
+
+.btn:hover{
+    border: 1px solid white; 
 }
 
 .sticky{
@@ -122,9 +126,16 @@ font-size: 60px; text-align: center; letter-spacing: 0.05em;
   text-align: center; font-size: 18px; font-weight: bold
 }
 
+h2{
+  margin-top: 64px;
+}
+
 h4{
   margin-top: 32px;
-/*  font-size: 20px;*/
+}
+
+h4 a{
+  text-decoration: none;
 }
 
 .btn-small-text{
@@ -137,6 +148,15 @@ h4{
   max-width: 700px;
   margin: 28px 16px;
   padding: 50px 100px; 
+}
+
+img{
+user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
 }
 
 @media (max-width: 800px){
@@ -158,11 +178,21 @@ h4{
     font-size: 40px;
   }
 
+h2{
+  margin-top: 32px;
+}
+
+h4{
+  margin-top: 24px;
+}
+
+
   .container{
     padding: 50px 0;
   }
 
   .email-div{
+    margin-top: 16px;
     padding: 20px 10%;
     font-size: 12px;
   }
@@ -171,6 +201,10 @@ h4{
     grid-template-columns: 1fr auto auto; 
     grid-gap: 10%;
     padding: 5%;
+  }
+
+  ol{
+    padding-left: 16px;
   }
 }
 
@@ -213,34 +247,31 @@ h4{
     DIAMOND LIST
   </h1>
   <div class="subtitle">Helping sustainability focused investors discover overlooked climate companies</div>
-  <img class="gradient" src="rad-gradient.png">
+  <img class="gradient" src="blue-gradient.png">
 </div>
 
 <div class="email-div">
 
+
 <p>
-Not all climate companies are ready for VC funding off the bat. Some of the most innovative and essential climate solutions require a large amount of upfront research & development and/or take time to grow their markets, necessitating a long-term investment horizon. Yet these long-game solutions may have the most potential for impact. Funding them is a critical part of combating climate change.
+We are four climate activists who have spent a lot of time talking to climate VCs and hearing how regularly they have to turn away strong teams with high potential because the opportunity is just a little too early or too risky at that time. Simultaneously, angels and philanthropic investors are making unprecedented commitments to fight climate change; they have the risk appetite for promising, early-stage companies but smaller staffs and fewer resources than VCs to do the due diligence. We decided to help bridge these groups.
 </p>
 
 <p>
-We are four climate activists who have spent a lot of time talking to climate investors and hearing how regularly they turn away strong teams with high potential because the opportunity is just a little too early or too risky at that time. We decided to do something about this. 
+Diamond List is an attempt to surface the <span style="font-style: italic">untapped gems in climate</span> — early-stage companies that deserve investment, but have so far been overlooked. We modeled Diamond List after Hollywood’s Black List for under-the-radar screenplays. Since 2005, the <a href="https://blcklst.com/">Black List</a> has uncovered hidden gems such as ‘Argo’, ‘Juno’, ‘Slumdog Millionaire’, and ‘The King’s Speech.’ Black List films have grossed over $25 billion and have been nominated for over 240 Academy Awards, winning more than 45.  
 </p>
 
-<p>
-Diamond List is an attempt to surface the untapped gems in climate—early-stage companies that deserve investment, but have so far been overlooked. We modeled Diamond List after Hollywood’s <a href="https://blcklst.com/">Black List</a> for under-the-radar screenplays. Since 2005, the Black List has uncovered hidden gems such as ‘Argo’, ‘Juno’, ‘Slumdog Millionaire’, and ‘The King’s Speech.’ Black List films have grossed over $25 billion and have been nominated for over 240 Academy Awards, winning more than 45.
-</p>
-
-<h4>
+<h2>
 HOW THIS WORKS
-</h4>
+</h2>
 
 <p>
-You—professional investors, analysts, and angels—nominate early-stage climate companies you believe in. We share the resulting list of companies back with you; perhaps others investors have spotted a diamond for your fund! Philanthropists, non profits and early stage angels focused on climate are already lined up to start working with these startups. They’re uniquely risk tolerant and eager to take notes from you.
+You — professional investors, analysts, and angels — nominate early-stage climate companies you believe in. We share the resulting list of companies back with you; perhaps others investors have spotted a diamond for your fund!  We will also proactively share the list with angels and philanthropic investors. They’re uniquely risk tolerant and eager to take notes from you.
 </p>
 
-<h4>
+<h2>
 DIAMOND LIST CRITERIA
-</h4>
+</h2>
 
 <ol>
   <li><strong>Investment Worthy</strong>. You believe in this idea, the team, and the potential for impact.</li>
@@ -253,7 +284,7 @@ We accept nominations with or without revenue, anywhere in the world.
 </p>
 
 <p>
-So tell us—who are the diamonds in the rough?
+So tell us — who are the diamonds in the rough?
 </p>
 
 
@@ -263,13 +294,10 @@ So tell us—who are the diamonds in the rough?
     BECOME A NOMINATOR
   </div>
   <div class="btn-small-text" style="font-style: italic">Investment Professionals Only</div>
-  <div class="btn-small-text">Now through Dec 14, 2020</div>
+  <div class="btn-small-text">Now through Dec 22, 2020</div>
 </a>
 </div>
 
-<p>
-All other friends and followers can sign up here to...
-</p> 
 
 <div style="display: flex; justify-content: center; position:relative">
 <a href="https://forms.gle/bv2h8DfzeJ5f9oKd9" class="btn" style="position:relative">
@@ -278,32 +306,69 @@ All other friends and followers can sign up here to...
   </div>
   <div class="btn-small-text" style="font-style: italic">Anyone</div>
   <div class="btn-small-text">Coming Early 2021</div>
-  <img class="gradient" src="rad-gradient.png" style="left:0%; top: -100px;">
+<!--  <img class="gradient" src="rad-gradient.png" style="left:0%; top: -100px;"> -->
 </a>
 
 </div>
 
 
-<!--<h4>
+<!-- <h2 id="who">
 WHO WE ARE
-</h4>
+</h2>
 
 <p>
 We are four climate activists who banded together in apocalyptic 2020 to launch Diamond List. We have taken this on as volunteers and have no skin in the game of who gets featured on the list.   
 </p>
 
+<h4>
+OLYA IRZAK
+</h4>
+
 <p>
-We believe it is especially important to find underfunded climate startups in order to mitigate CO2 emissions. We will match companies with high risk / philanthropic capital that’s looking for the highest leverage — we believe investing in early stage companies earliest stage rockstars to bridge the gap to VC funding is the best dollar and hour spent per tonne of CO2e mitigated.
+I am the CEO of Frost Methane. I was previously a system architect at Zola Electric, working on early stage climate projects at Google X, a team lead at Google Energy and a lecturer at the University of Toronto. Starting Frost Methane, I thought I was in a great position: deep domain expertise, super talented friends that jumped in to build our first prototype and install it in Alaska, amazing network, some cash cushion to self-sponsor our first deployment and not take a salary for a while. Yet, getting Frost Methane from idea to where it is today was by far the hardest thing I’vedone and wouldn’t have been possible without the early support of the Mulago Foundation and Lowercarbon Capital.
 </p>
 
 <p>
-We will tally up nominations for specific startups and release a list of the industry’s most liked, yet unfunded startups — you can have free access to this list.
-</p> -->
+I co-founded the Diamond List to match the philanthropic, angel and nonprofit capital and resources that want to flow to climate change with super promising early stage startups that need it. To give amazing founders with brilliant climate mitigation ideas the same shot at turning their visions into reality that I got.  
+</p>
+
+<p style="font-style: italic">
+Frost Methane is ineligible for the Diamond List to avoid any possible conflict of interest. Any reference to it will be scrubbed from the final list.
+</p>
+
+<h4>
+<a href="http://cassandraxia.com">CASSANDRA XIA</a>
+</h4>
+
+<p>
+I am a software engineer by training and in July 2020 I left Google Research with my friend Eugene Kirpichov to see what I can do for the climate crisis. Since leaving Google, Eugene and I have spoken with over a hundred people in the climate ecosystem and have heard that the main hurdles for climate founders are fundraising and hiring. We founded the workonclimate.org community to assist climate companies hiring technical talent, and I am very excited about the potential of Diamond List as a means of equalizing fundraising. 
+</p>
+
+
+<h4>
+<a href="https://www.linkedin.com/in/zeinafayyazkim/">ZEINA FAYYAZ KIM</a>
+</h4>
+
+<p>
+I am a startup operator, impact investor, and venture philanthropist. Up to now, I have primarily operated in the education-to-employment space, but the more I learn about climate change, the more compelled I feel to take action on that, too. For me, the Diamond List was a natural starting place. 
+</p>
+
+<p>
+I was chief of staff at Imbellus, an assessment technology company, through its <a href="https://www.reuters.com/article/roblox-ma-imbellus/gaming-platform-roblox-acquires-imbellus-assets-ahead-of-ipo-idUSL1N2IH38U">recent acquisition</a> by Roblox. While there, I managed the company’s blended-finance Series B and M&A. Prior to Imbellus, I held grantmaking roles at Chan-Zuckerberg Initiative and NewSchools Venture Fund as well as investing roles at Goldman Sachs and Sonen Capital. I started my career running accelerator programs—one with a geographic focus on New England and one with a population focus on American Black males. The latter was born out of President Obama’s My Brother’s Keeper initiative and ran in partnership with Open Society Foundations and the Campaign for Black Male Achievement.
+</p>
+
+
+<h4>
+<a href="https://www.linkedin.com/in/jeremiah-brewer-595042b2/">JEREMY BREWER</a>
+</h4>
+
+<p>
+I am a socially focused investor who previously helped lead investments for the Google alumni community, a California based PE firm, and an Atlantic Canada based family office. I have worked product, data analysis, and anti-abuse roles at companies including Google, Facebook, and Dataminr. I previously co-founded a renewable energy startup with my close friend Sam Levac-Levey, which led me down the VC path. I help organize the <a href="https://workonclimate.org/">Work on Climate</a> community; a group of high skilled individuals looking to have climate impact through work & volunteering.
+</p>
 
 
 
-
-</div>
+</div> -->
 
 </div>
 
