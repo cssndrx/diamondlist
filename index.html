@@ -72,7 +72,8 @@ body{
 }
 
 .btn:hover{
-    border: 1px solid white; 
+  background-color: rgba(255,255,255,0.2);/*    border: 1px solid rgba(0,96,110,0.7); */
+
 }
 
 .sticky{
@@ -127,7 +128,7 @@ font-size: 60px; text-align: center; letter-spacing: 0.05em;
 }
 
 h2{
-  margin-top: 64px;
+  margin-top: 48px;
 }
 
 h4{
@@ -144,7 +145,8 @@ h4 a{
 }
 
 .container{
-  background-color: rgba(0,0,0,0.8);   
+/*  background-color: rgba(0,0,0,0.8);   */
+background-color: rgba(0,96,110,0.5);
   max-width: 700px;
   margin: 28px 16px;
   padding: 50px 100px; 
@@ -247,14 +249,14 @@ h4{
     DIAMOND LIST
   </h1>
   <div class="subtitle">Helping sustainability focused investors discover overlooked climate companies</div>
-  <img class="gradient" src="blue-gradient.png">
+<!--  <img class="gradient" src="blue-gradient.png"> -->
 </div>
 
 <div class="email-div">
 
 
 <p>
-We are four climate activists who have spent a lot of time talking to climate VCs and hearing how regularly they have to turn away strong teams with high potential because the opportunity is just a little too early or too risky at that time. Simultaneously, angels and philanthropic investors are making unprecedented commitments to fight climate change; they have the risk appetite for promising, early-stage companies but smaller staffs and fewer resources than VCs to do the due diligence. We decided to help bridge these groups.
+We are <a href="#who" target="_self" onclick="showWho()" style="z-index: 1; position:relative">four climate activists</a> who have spent time with climate VCs who have to turn away strong teams with high potential because the opportunity is just a little too early or too risky at that time. Yet, philanthropic and angel investors committed to fighting climate change have the risk appetite for promising, early-stage companies but fewer staff and resources than VCs to do the due diligence. We decided to help bridge these two groups.
 </p>
 
 <p>
@@ -311,8 +313,8 @@ So tell us — who are the diamonds in the rough?
 
 </div>
 
-
-<!-- <h2 id="who">
+<div id="who" style="display:none">
+<h2>
 WHO WE ARE
 </h2>
 
@@ -368,9 +370,18 @@ I am a socially focused investor who previously helped lead investments for the 
 
 
 
-</div> -->
+</div>  <!-- end who -->
 
+</div> <!-- end email div -->
 </div>
 
 </body>
+
+<script>
+  function showWho(){
+    const $elt = document.getElementById("who");
+    $elt.style.display = 'block';
+    $elt.scrollIntoView();
+  }
+  </script>
 
